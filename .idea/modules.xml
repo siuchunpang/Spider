@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/crawler.iml" filepath="$PROJECT_DIR$/.idea/crawler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../proxy_pool-master/.idea/proxy_pool-master.iml" filepath="$PROJECT_DIR$/../proxy_pool-master/.idea/proxy_pool-master.iml" />
     </modules>
   </component>
 </project>
