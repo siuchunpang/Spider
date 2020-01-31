@@ -60,7 +60,7 @@ def parse(content):
     next_page = soup.find('a', class_='aNxt')
     if next_page:
         spider_count += 1
-        time.sleep(random.random()*3)
+        time.sleep(random.random()*6)
         next_url = next_page['href']
         next_url_text = get_html(next_url)
         parse(next_url_text)

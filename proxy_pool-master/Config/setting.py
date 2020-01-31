@@ -42,9 +42,9 @@ DB_PASSWORD = getenv('db_password', '')
 """ 数据库配置 """
 DATABASES = {
     "default": {
-        "TYPE": "SSDB",        # 目前支持SSDB或REDIS数据库
+        "TYPE": "REDIS",        # 目前支持SSDB或REDIS数据库
         "HOST": "127.0.0.1",   # db host
-        "PORT": 8888,          # db port，例如SSDB通常使用8888，REDIS通常默认使用6379
+        "PORT": 6379,          # db port，例如SSDB通常使用8888，REDIS通常默认使用6379
         "NAME": "proxy",       # 默认配置
         "PASSWORD": ""
     }
