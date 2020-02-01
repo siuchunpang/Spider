@@ -1,5 +1,5 @@
 
-ip代理池：proxy_pool-master
+使用ip代理池：proxy_pool-master
 =======
 
 ### 启动:

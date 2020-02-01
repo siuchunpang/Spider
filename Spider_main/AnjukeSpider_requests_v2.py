@@ -1,11 +1,18 @@
-import requests
 from bs4 import BeautifulSoup
 from fake_useragent import UserAgent
-import time
+from selenium import webdriver
+from DBUtils import DBUtils
+import requests
+import time, datetime
 import random
 import json
+import warnings
+
+# 忽略警告错误的输出
+warnings.filterwarnings('ignore')
 
 ua = UserAgent()
+db = DBUtils()
 spider_count = 1
 
 
@@ -46,21 +53,23 @@ def get_html(url):
 
 def parse(content):
     global spider_count
+    dt = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
     soup = BeautifulSoup(content, 'html.parser')
     link_list = soup.find_all("a", attrs={"class": "houseListTitle"})
     print("开始解析...")
 
     for link in link_list:
-        my_dict = {}
-        my_dict['title'] = link['title']
-        my_dict['href'] = link['href']
-        result_list.append(my_dict)
+        sql = 'INSERT IGNORE INTO anjuke_3d (name, web_site, create_time)' \
+          'VALUES("%s","%s","%s")' % \
+          (str(link['title']), str(link['href']), dt)
+        db.operate_data(sql)
 
     print("解析完成！")
     next_page = soup.find('a', class_='aNxt')
     if next_page:
         spider_count += 1
-        time.sleep(random.random()*6)
+        time.sleep(random.random() * 6)
         next_url = next_page['href']
         next_url_text = get_html(next_url)
         parse(next_url_text)
@@ -69,24 +78,18 @@ def parse(content):
             print("爬取完毕")
         else:
             print("防爬机制已阻拦，需要人工操作")
-
-
-def write_json(result):
-    s = json.dumps(result, indent=4, ensure_ascii=False)
-    with open('links.json', 'w', encoding='utf-8') as f:
-        f.write(s)
+            driver = webdriver.Chrome()
+            driver.get("https://beijing.anjuke.com/sale/v3/")
+            driver.maximize_window()
 
 
 if __name__ == '__main__':
-    result_list = []
     base_url = "https://beijing.anjuke.com/sale/v3/"
     try:
         base_text = get_html(base_url)
         parse(base_text)
-    except Exception:
-        pass
+    except Exception as e:
+        print(e)
     finally:
-        write_json(result_list)
+        db.close()
         print(spider_count)
-
-
