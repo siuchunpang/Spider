@@ -1,6 +1,8 @@
+# -*- coding: utf-8 -*-
 import pymysql
 import configparser
 import datetime
+import json
 import warnings
 
 warnings.filterwarnings('ignore')
@@ -49,14 +51,16 @@ class DBUtils:
         try:
             self.conn.commit()
         except pymysql.Error as e:
-            print('Mysql Error %d: %s' % (e.args[0], e.args[1]))
+            # print('Mysql Error %d: %s' % (e.args[0], e.args[1]))
+            print(e)
 
     # 回滚数据
     def rollback_data(self):
         try:
             self.conn.rollback()
         except pymysql.Error as e:
-            print('Mysql Error %d: %s' % (e.args[0], e.args[1]))
+            # print('Mysql Error %d: %s' % (e.args[0], e.args[1]))
+            print(e)
 
     # 操作数据
     def operate_data(self, sql):
@@ -73,16 +77,33 @@ class DBUtils:
             self.cursor.close()
             self.conn.close()
         except pymysql.Error as e:
-            print('Mysql Error %d: %s' % (e.args[0], e.args[1]))
+            # print('Mysql Error %d: %s' % (e.args[0], e.args[1]))
+            print(e)
 
 
 if __name__ == '__main__':
+    error_title = ''
+    error_href = ''
+    with open("links.json", "r", encoding="utf8") as f:
+        datas = json.loads(f.read())
+
     db = DBUtils()
-    address = "https://beijing.anjuke.com/prop/view/A1935712970?from=esf_list_spfy&spread=filtersearch&invalid=1&click_url=https://lego-click.anjuke.com/jump?target=pZwY0ZnlsztdraOWUvYKuadbrjDvnHcLraYdnvNvsHwBnjTVrj0YnidhmW-BPAnYm1P-nhDKnHTkrHD3rjE1TEDQnWNkPHEQrHb3rHc1P10LTHDOnjTkTHDOnjTkTHD_nHnKnHTkTHDdrjTdn1bLnWE1nW0Kn97AEzdEEzdKibfb8C1hBmfhBs4MoufG9cM-BFxCCpWGCUNKnEDQTEDVnEDKnHczn1EOnHTzP1mYPWNvnWnkPTDvTgK60h7V01NknHCzTHDKPj9kPHc3Pj9VnynOuaYYnjNOsycYmvmVm19On19znyDLm19dTHDznWnYrHDknW0On1DLrHD1PWTKnHczn1EOnHTzP19Ln1TdPj0znTDKTEDKTiYKTE7CIZwk01CfsvF-pyGGUh08myOJIyV-shPfUiq1myQ-sLm1skD3wW9knNFjEBYdnYwjsHw7EbmVEH67raYkPjDYEYPAEbDOEYNKnWcQsWE8nWDksWDLn9DkTHTKTHD_nHnKXLYKnHTkn1NKnHTknHmYrTD3mvuBPhDdPiYLPWwbsHE1nyEVryELmzdhuyPWrH6bmHczuHnKTHEKTED1THDknakQPW9YsjcdPHmzTH9OPjKhrjnkuWu-PhEzPyc&uniqid=pc5e351f4cb9bfe6.03295951&position=2&kwtype=filter&now_time=1580539724"
+    title = "宾阳里 独立一居 可厅截2居 南北通透 阳光房 交通购物方便"
+    href = "https://beijing.anjuke.com/prop/view/A1963474700?from=esf_list_spfy&spread=filtersearch&invalid=1&click_url=https://lego-click.anjuke.com/jump?target=pZwY0ZnlsztdraOWUvYKuadWP1DYrj6bnzYzPywhsHwWuycVmhnYridBPHN3ryEQuW01mHmKPj0LnjE3PkDKnHnknW0vPH0LnHmYPjbYnEDQP1nknTDQP1nknTDQsjD1THDknTDQPH9kPWnYnW9OrHmYTHDKwbnVNDnVENGsOsJnOChsOCB4OlvUlmaFOmBgl2AClpAdTHDKnEDKsHDKTHDznWn3rjTvrHnLnH0vrHmdnHcKP97kmgF6UgndnjDln9DQTyDzujIbPWb1sHmYPAmVPjFhnadBmyR-sH--nWT3rjIbujbvuEDQnWc1rj9kPWb1rH0LP1cvrH0vTHDznWn3rjTvrHnOnHTvn1EYrHmKTEDKTEDVTEDKpZwY0ZnlszqBuy-JpyOMsh78pMRouiOWUvYf0v7_uiqvnztKnH9kEHwDPHTVP1KKEBYOPH6AsHTYnbnVPYF7PYcdEWEOPDwKTHczni3YsWcQna3QP1cKnTDkTEDQsjD1TgVqTHDknjndTHDknjDvPj9KPAm3rAmdmyEVnHc1uiYYmh7WsH6WmvDVnyEduj0LP10vnhEzTEDYTEDKnkDQnjT_nHT1PzkvrHD1TynYnAFbrHPWP1TLnjKWuhN&uniqid=pc5e3690b2b7f704.98857820&position=1&kwtype=filter&now_time=1580634290"
     dt = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    sql = 'INSERT IGNORE INTO anjuke_3d (name, web_site, create_time)' \
-          'VALUES("%s","%s","%s")' % \
-          ("华发蔚蓝堡", address, dt)
-    db.operate_data(sql)
-    db.commit_data()
-    db.close()
+
+    try:
+        for data in datas:
+            error_title = data["title"]
+            error_href = data["href"]
+            sql = 'INSERT IGNORE INTO anjuke_3d_test (name, web_site, create_time)' \
+              'VALUES("%s","%s","%s")' % \
+              (data["title"], data["href"], dt)
+            db.operate_data(sql)
+            db.commit_data()
+    except UnicodeDecodeError as e:
+        print("title：", error_title)
+        print("href：", error_href)
+        print(e)
+    finally:
+        db.close()

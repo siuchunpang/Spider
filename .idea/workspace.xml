@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="910e4dda-3077-4138-a545-ee0a3d53af38" name="Default Changelist" comment="尝试使用ip线程池">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spider_main/AnjukeSpider_requests_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Spider_main/AnjukeSpider_requests_v2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spider_main/DBUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/Spider_main/DBUtils.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +18,8 @@
     <SUITE FILE_PATH="coverage/Spider$proxyPool.coverage" NAME="proxyPool Coverage Results" MODIFIED="1579942790888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/proxy_pool-master/cli" />
     <SUITE FILE_PATH="coverage/crawler$AnjukeSpider_requests.coverage" NAME="AnjukeSpider_requests Coverage Results" MODIFIED="1578585198261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/crawler$test.coverage" NAME="test Coverage Results" MODIFIED="1578580672847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Spider$DBUtils.coverage" NAME="DBUtils Coverage Results" MODIFIED="1580548371699" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spider_main" />
-    <SUITE FILE_PATH="coverage/Spider$AnjukeSpider_requests_v2.coverage" NAME="AnjukeSpider_requests_v2 Coverage Results" MODIFIED="1580548659844" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spider_main" />
+    <SUITE FILE_PATH="coverage/Spider$DBUtils.coverage" NAME="DBUtils Coverage Results" MODIFIED="1580629029491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spider_main" />
+    <SUITE FILE_PATH="coverage/Spider$AnjukeSpider_requests_v2.coverage" NAME="AnjukeSpider_requests_v2 Coverage Results" MODIFIED="1580634291096" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spider_main" />
     <SUITE FILE_PATH="coverage/Spider$AnjukeSpider_requests__1_.coverage" NAME="AnjukeSpider_requests (1) Coverage Results" MODIFIED="1579944467867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spider_main" />
   </component>
   <component name="FUSProjectUsageTrigger">
@@ -28,17 +27,18 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="3" />
+          <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="4" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Python Console" value="33" />
+          <entry key="Python Console" value="78" />
           <entry key="config" value="18" />
           <entry key="dummy" value="15" />
           <entry key="md" value="280" />
-          <entry key="py" value="1292" />
+          <entry key="py" value="1743" />
           <entry key="txt" value="17" />
         </counts>
       </usages-collector>
@@ -46,16 +46,16 @@
         <counts>
           <entry key="Markdown" value="280" />
           <entry key="PLAIN_TEXT" value="50" />
-          <entry key="Python" value="1325" />
+          <entry key="Python" value="1821" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Dockerfile" value="1" />
-          <entry key="config" value="2" />
-          <entry key="json" value="13" />
-          <entry key="md" value="9" />
-          <entry key="py" value="26" />
+          <entry key="config" value="4" />
+          <entry key="json" value="16" />
+          <entry key="md" value="11" />
+          <entry key="py" value="36" />
           <entry key="sh" value="3" />
           <entry key="txt" value="3" />
         </counts>
@@ -63,10 +63,10 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Dockerfile" value="1" />
-          <entry key="JSON" value="13" />
-          <entry key="Markdown" value="9" />
-          <entry key="PLAIN_TEXT" value="8" />
-          <entry key="Python" value="26" />
+          <entry key="JSON" value="16" />
+          <entry key="Markdown" value="11" />
+          <entry key="PLAIN_TEXT" value="10" />
+          <entry key="Python" value="36" />
         </counts>
       </usages-collector>
     </session>
@@ -76,11 +76,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Spider_main/AnjukeSpider_requests_v2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="78" column="13" lean-forward="true" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
+            <state relative-caret-position="228">
+              <caret line="39" column="12" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
-                <marker date="1580548657410" expanded="true" signature="2286:2289" ph="..." />
+                <marker date="1580634286019" expanded="true" signature="2328:2331" ph="..." />
               </folding>
             </state>
           </provider>
@@ -89,11 +89,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Spider_main/DBUtils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="487">
+              <caret line="95" column="26" selection-start-line="95" selection-start-column="26" selection-end-line="95" selection-end-column="26" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://D:/Program Files (x86)/Python3.7/Lib/site-packages/pymysql/connections.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="1194" column="32" selection-start-line="1194" selection-start-column="32" selection-end-line="1194" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -110,6 +119,9 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>houseListTitle</find>
+      <find>阳光邑上 两居室 南北通透户型 看房方便 随时联系</find>
+      <find>春节不打烊，通州70年住宅，适合刚需客户，可公积金，有班车</find>
+      <find>东关北里 中楼层 南北2居 独立朝北厅 可满贷 出行便利</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -128,12 +140,14 @@
         <option value="$PROJECT_DIR$/proxy_pool-master/cli/proxyPool.py" />
         <option value="$PROJECT_DIR$/Spider_main/AnjukeSpider_requests_test.py" />
         <option value="$PROJECT_DIR$/proxy_pool-master/Config/setting.py" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Spider_main/AnjukeSpider_DB.py" />
         <option value="$PROJECT_DIR$/Spider_main/AnjukeSpiderDB.py" />
         <option value="$PROJECT_DIR$/Spider_main/db.config" />
-        <option value="$PROJECT_DIR$/Spider_main/DBUtils.py" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/Spider_main/links.json" />
+        <option value="D:/Program Files (x86)/Python3.7/Lib/site-packages/pymysql/connections.py" />
         <option value="$PROJECT_DIR$/Spider_main/AnjukeSpider_requests_v2.py" />
+        <option value="$PROJECT_DIR$/Spider_main/DBUtils.py" />
       </list>
     </option>
   </component>
@@ -143,7 +157,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="109" />
     <option name="y" value="-15" />
     <option name="width" value="1400" />
@@ -174,7 +188,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -191,6 +204,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -200,12 +214,12 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\AutoTest\Spider" />
-      <recent name="F:\AutoTest\Spider\Spider_main" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\AutoTest\Spider\Spider_main" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\AutoTest\Spider\Spider_main" />
+      <recent name="F:\AutoTest\Spider" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -343,15 +357,14 @@
     <option name="totallyTimeSpent" value="22650000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18176973" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18336888" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32760474" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32760474" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32760474" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39849624" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -360,7 +373,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32975295" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" weight="0.32867885" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49946696" weight="0.32867885" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49946696" visible="true" weight="0.32867885" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32975295" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -416,16 +429,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SSDBAdmin-master/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SSDBAdmin-master/SSDBAdmin/setting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="5" lean-forward="true" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/SSDBAdmin-master/requirements.txt" />
+    <entry file="file://$PROJECT_DIR$/SSDBAdmin-master/SSDBAdmin/setting.py" />
     <entry file="file://$PROJECT_DIR$/Spider_main/api/api.py" />
     <entry file="file://D:/Program Files (x86)/Python3.7/Lib/site-packages/requests/api.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -438,9 +443,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="158">
           <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-          <folding>
-            <element signature="e#349#359#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -448,19 +450,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="382">
           <caret line="49" column="22" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Spider_main/AnjukeSpider_requests_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Spider_main/AnjukeSpider_requests_test.py" />
     <entry file="file://$PROJECT_DIR$/Spider_main/links20200131.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-227557" />
@@ -484,17 +477,45 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="38">
-            <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <first_editor relative-caret-position="266">
+            <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="32" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Spider_main/links20200130.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="873" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Spider_main/AnjukeSpider_requests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1116">
+        <state relative-caret-position="-779">
           <caret line="4" column="11" lean-forward="true" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Program Files (x86)/Python3.7/Lib/site-packages/pymysql/cursors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="360" selection-start-line="360" selection-end-line="360" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Spider_main/links.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="709">
+          <caret line="197" column="5" selection-start-line="197" selection-start-column="5" selection-end-line="197" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Program Files (x86)/Python3.7/Lib/site-packages/pymysql/connections.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="1194" column="32" selection-start-line="1194" selection-start-column="32" selection-end-line="1194" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -505,38 +526,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Spider_main/links.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Spider_main/links20200130.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="873" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Program Files (x86)/Python3.7/Lib/site-packages/pymysql/cursors.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="164" selection-start-line="164" selection-end-line="164" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Spider_main/AnjukeSpider_requests_v2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="78" column="13" lean-forward="true" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
+        <state relative-caret-position="228">
+          <caret line="39" column="12" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
-            <marker date="1580548657410" expanded="true" signature="2286:2289" ph="..." />
+            <marker date="1580634286019" expanded="true" signature="2328:2331" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Spider_main/DBUtils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="487">
+          <caret line="95" column="26" selection-start-line="95" selection-start-column="26" selection-end-line="95" selection-end-column="26" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>

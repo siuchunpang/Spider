@@ -1,15 +1,12 @@
+# -*- coding: utf-8 -*-
 from bs4 import BeautifulSoup
 from fake_useragent import UserAgent
 from selenium import webdriver
 from DBUtils import DBUtils
 import requests
-import time, datetime
+import time
+import datetime
 import random
-import json
-import warnings
-
-# 忽略警告错误的输出
-warnings.filterwarnings('ignore')
 
 ua = UserAgent()
 db = DBUtils()
@@ -41,9 +38,10 @@ def get_html(url):
     print("User-agent：" + USER_AGENT)
     while retry_count > 0:
         try:
-            html = requests.get(url, headers=headers, proxies={"http": "http://{}".format(proxy)})
-            # 使用代理访问
-            return html.content
+            resp = requests.get(url, headers=headers, proxies={"http": "http://{}".format(proxy)})
+            resp.encoding = 'utf-8'
+            html = resp.text
+            return html
         except Exception:
             retry_count -= 1
     # 出错5次, 删除代理池中代理
@@ -64,6 +62,7 @@ def parse(content):
           'VALUES("%s","%s","%s")' % \
           (str(link['title']), str(link['href']), dt)
         db.operate_data(sql)
+        db.commit_data()
 
     print("解析完成！")
     next_page = soup.find('a', class_='aNxt')
@@ -81,6 +80,7 @@ def parse(content):
             driver = webdriver.Chrome()
             driver.get("https://beijing.anjuke.com/sale/v3/")
             driver.maximize_window()
+            time.sleep(8)
 
 
 if __name__ == '__main__':
