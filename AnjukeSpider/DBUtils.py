@@ -82,8 +82,6 @@ class DBUtils:
 
 
 if __name__ == '__main__':
-    error_title = ''
-    error_href = ''
     with open("links.json", "r", encoding="utf8") as f:
         datas = json.loads(f.read())
 
@@ -94,16 +92,12 @@ if __name__ == '__main__':
 
     try:
         for data in datas:
-            error_title = data["title"]
-            error_href = data["href"]
             sql = 'INSERT IGNORE INTO anjuke_3d_test (name, web_site, create_time)' \
               'VALUES("%s","%s","%s")' % \
               (data["title"], data["href"], dt)
             db.operate_data(sql)
             db.commit_data()
     except UnicodeDecodeError as e:
-        print("title：", error_title)
-        print("href：", error_href)
         print(e)
     finally:
         db.close()
