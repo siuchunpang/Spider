@@ -7,6 +7,8 @@ import requests
 import time
 import datetime
 import random
+import json
+import re
 
 
 class Spider:
@@ -14,6 +16,7 @@ class Spider:
         self.ua = UserAgent()
         self.db = DBUtils()
         self.spider_count = 1
+        self.img_count = 1
 
     # 代理ip线程池
     def get_proxy(self):
@@ -59,30 +62,33 @@ class Spider:
             self.spider_error()
 
     def parse(self, content):
-
         soup = BeautifulSoup(content, 'html.parser')
         link_list = soup.find_all("a", attrs={"class": "houseListTitle"})
 
         if link_list is not None:
 
-            print("开始解析...")
+            print("开始解析网站...")
 
             for link in link_list:
                 link_title = link['title']
                 link_href = link['href']
                 dt = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-                # 二次爬取场景链接
+                # 爬取场景链接
                 link_href_text = self.get_html(link_href, 1)
                 link_3d = self.parse_3d(link_href_text)
 
-                sql = 'INSERT IGNORE INTO anjuke_3d_test (name, web_site, 3d_link, create_time)' \
-                      'VALUES("%s","%s","%s","%s")' % \
-                      (str(link_title), str(link_href), str(link_3d), dt)
+                # 爬取场景图片
+                link_img_text = self.get_html(link_3d, 1)
+                link_imgs = self.parse_img(link_img_text)
+
+                sql = 'INSERT IGNORE INTO anjuke_3d_test (name, web_site, 3d_link, create_time, img_link1, img_link2, img_link3, img_link4, img_link5, img_link6)' \
+                      'VALUES("%s","%s","%s","%s","%s","%s","%s","%s","%s","%s")' % \
+                      (str(link_title), str(link_href), str(link_3d), dt, str(link_imgs[0]), str(link_imgs[1]), str(link_imgs[2]), str(link_imgs[3]), str(link_imgs[4]), str(link_imgs[5]))
                 self.db.operate_data(sql)
                 self.db.commit_data()
 
-            print("解析完成！")
+            print("解析网站完成！")
             next_page = soup.find('a', class_='aNxt')
             if next_page is not None:
                 self.spider_count += 1
@@ -96,6 +102,25 @@ class Spider:
                     return self.spider_count
                 else:
                     self.spider_error()
+        else:
+            self.spider_error()
+
+    def parse_img(self, text):
+        data_3d_list = re.findall(r'VRHOUSE_DATA_3D = (.+?)    </script>', text)
+        if not data_3d_list:
+            data_3d_list = re.findall(r'\(\'vrdataload\',(.+?)\)', text)
+        if data_3d_list is not []:
+
+            print("开始解析图片%d..." % self.img_count)
+            self.img_count += 1
+
+            data_3d = data_3d_list[0]
+            data = json.loads(data_3d, strict=False)
+            hotspots = data['HotSpots'][0]['TileImagesPath']
+
+            print("解析图片完成！")
+
+            return hotspots
         else:
             self.spider_error()
 

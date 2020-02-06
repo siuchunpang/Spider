@@ -33,7 +33,7 @@ class DBUtils:
         try:
             self.conn = pymysql.connect(host=host, port=port, user=user, passwd=pwd, db=db, charset=charset)
         except pymysql.Error as e:
-            print("数据库连接失败：", e)
+            print('Mysql Error %d: %s' % (e.args[0], e.args[1]))
         finally:
             self.cursor = self.conn.cursor()
 
@@ -42,7 +42,7 @@ class DBUtils:
         try:
             self.cursor.execute(sql)
         except pymysql.Error as e:
-            print('执行查询SQL失败,错误信息:', e)
+            print('Mysql Error %d: %s' % (e.args[0], e.args[1]))
         finally:
             return self.cursor.fetchall()
 
@@ -51,16 +51,14 @@ class DBUtils:
         try:
             self.conn.commit()
         except pymysql.Error as e:
-            # print('Mysql Error %d: %s' % (e.args[0], e.args[1]))
-            print(e)
+            print('Mysql Error %d: %s' % (e.args[0], e.args[1]))
 
     # 回滚数据
     def rollback_data(self):
         try:
             self.conn.rollback()
         except pymysql.Error as e:
-            # print('Mysql Error %d: %s' % (e.args[0], e.args[1]))
-            print(e)
+            print('Mysql Error %d: %s' % (e.args[0], e.args[1]))
 
     # 操作数据
     def operate_data(self, sql):
@@ -77,8 +75,7 @@ class DBUtils:
             self.cursor.close()
             self.conn.close()
         except pymysql.Error as e:
-            # print('Mysql Error %d: %s' % (e.args[0], e.args[1]))
-            print(e)
+            print('Mysql Error %d: %s' % (e.args[0], e.args[1]))
 
 
 if __name__ == '__main__':
