@@ -106,6 +106,7 @@ class Spider:
             self.spider_error()
 
     def parse_img(self, text):
+        time.sleep(random.random() * 3)
         data_3d_list = re.findall(r'VRHOUSE_DATA_3D = (.+?)    </script>', text)
         if not data_3d_list:
             data_3d_list = re.findall(r'\(\'vrdataload\',(.+?)\)', text)
@@ -114,13 +115,17 @@ class Spider:
             print("开始解析图片%d..." % self.img_count)
             self.img_count += 1
 
-            data_3d = data_3d_list[0]
-            data = json.loads(data_3d, strict=False)
-            hotspots = data['HotSpots'][0]['TileImagesPath']
+            try:
+                data_3d = data_3d_list[0]
+                data = json.loads(data_3d, strict=False)
+                hotspots = data['HotSpots']
+                hotspot = hotspots[0]
+                img_links = hotspot['TileImagesPath']
+                print("解析图片完成！")
+                return img_links
+            except Exception as e:
+                print(e)
 
-            print("解析图片完成！")
-
-            return hotspots
         else:
             self.spider_error()
 

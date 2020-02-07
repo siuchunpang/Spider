@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="910e4dda-3077-4138-a545-ee0a3d53af38" name="Default Changelist" comment="尝试使用ip线程池">
-      <change beforePath="$PROJECT_DIR$/AnjukeSpider/DBUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/AnjukeSpider/DBUtils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AnjukeSpider/Spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/AnjukeSpider/Spider.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnjukeSpider/requests_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/AnjukeSpider/requests_test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,7 +20,7 @@
     <SUITE FILE_PATH="coverage/Spider$requests_test.coverage" NAME="requests_test Coverage Results" MODIFIED="1581001262408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AnjukeSpider" />
     <SUITE FILE_PATH="coverage/Spider$Spider.coverage" NAME="Spider Coverage Results" MODIFIED="1580975120610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AnjukeSpider" />
     <SUITE FILE_PATH="coverage/Spider$test.coverage" NAME="test Coverage Results" MODIFIED="1580958573431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AnjukeSpider" />
-    <SUITE FILE_PATH="coverage/Spider$main.coverage" NAME="main Coverage Results" MODIFIED="1581005187562" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AnjukeSpider" />
+    <SUITE FILE_PATH="coverage/Spider$main.coverage" NAME="main Coverage Results" MODIFIED="1581046684233" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AnjukeSpider" />
     <SUITE FILE_PATH="coverage/Spider$proxyPool.coverage" NAME="proxyPool Coverage Results" MODIFIED="1579942790888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/proxy_pool-master/cli" />
     <SUITE FILE_PATH="coverage/crawler$test.coverage" NAME="test Coverage Results" MODIFIED="1578580672847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Spider$DBUtils.coverage" NAME="DBUtils Coverage Results" MODIFIED="1580698930704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spider_main" />
@@ -43,7 +42,7 @@
           <entry key="config" value="18" />
           <entry key="dummy" value="38" />
           <entry key="md" value="280" />
-          <entry key="py" value="3570" />
+          <entry key="py" value="3642" />
           <entry key="txt" value="17" />
         </counts>
       </usages-collector>
@@ -51,7 +50,7 @@
         <counts>
           <entry key="Markdown" value="280" />
           <entry key="PLAIN_TEXT" value="73" />
-          <entry key="Python" value="3648" />
+          <entry key="Python" value="3720" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -81,13 +80,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AnjukeSpider/Spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="111" selection-start-line="111" selection-end-line="111" />
+            <state relative-caret-position="297">
+              <caret line="117" column="16" lean-forward="true" selection-start-line="117" selection-start-column="16" selection-end-line="117" selection-end-column="16" />
               <folding>
                 <element signature="e#24#53#0" expanded="true" />
-                <marker date="1581000730753" expanded="true" signature="245:386" ph="..." />
-                <marker date="1581000730753" expanded="true" signature="1630:1899" ph="..." />
-                <marker date="1581000730753" expanded="true" signature="4314:4315" ph="..." />
+                <marker date="1581046679995" expanded="true" signature="245:386" ph="..." />
+                <marker date="1581046679995" expanded="true" signature="1630:1899" ph="..." />
+                <marker date="1581046679995" expanded="true" signature="4522:4523" ph="..." />
               </folding>
             </state>
           </provider>
@@ -120,8 +119,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AnjukeSpider/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+            <state relative-caret-position="76">
+              <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
               <folding>
                 <element signature="e#24#49#0" expanded="true" />
               </folding>
@@ -445,6 +444,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18336888" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -482,11 +482,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/AnjukeSpider/Spider.py</url>
-          <line>108</line>
-          <option name="timeStamp" value="48" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/AnjukeSpider/requests_test.py</url>
           <line>49</line>
@@ -654,8 +649,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AnjukeSpider/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+        <state relative-caret-position="76">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
           <folding>
             <element signature="e#24#49#0" expanded="true" />
           </folding>
@@ -664,13 +659,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AnjukeSpider/Spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="111" selection-start-line="111" selection-end-line="111" />
+        <state relative-caret-position="297">
+          <caret line="117" column="16" lean-forward="true" selection-start-line="117" selection-start-column="16" selection-end-line="117" selection-end-column="16" />
           <folding>
             <element signature="e#24#53#0" expanded="true" />
-            <marker date="1581000730753" expanded="true" signature="245:386" ph="..." />
-            <marker date="1581000730753" expanded="true" signature="1630:1899" ph="..." />
-            <marker date="1581000730753" expanded="true" signature="4314:4315" ph="..." />
+            <marker date="1581046679995" expanded="true" signature="245:386" ph="..." />
+            <marker date="1581046679995" expanded="true" signature="1630:1899" ph="..." />
+            <marker date="1581046679995" expanded="true" signature="4522:4523" ph="..." />
           </folding>
         </state>
       </provider>
