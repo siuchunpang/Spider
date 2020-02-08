@@ -9,6 +9,8 @@ import datetime
 import random
 import json
 import re
+import sys
+import os
 
 
 class Spider:
@@ -26,7 +28,7 @@ class Spider:
         requests.get("http://127.0.0.1:5010/delete/?proxy={}".format(proxy))
 
     # 爬虫相关
-    def get_html(self, url, id=0):
+    def get_html(self, url, encoding=0, spider_num=0):
         USER_AGENT = self.ua.random
         headers = {
             "User-Agent": USER_AGENT,
@@ -36,15 +38,18 @@ class Spider:
 
         retry_count = 5  # 容错次数
         proxy = self.get_proxy().get("proxy")  # 获取代理ip
-        if id == 0:
+        if spider_num == 1:
             print("开始第%d次爬虫" % self.spider_count)
             print("代理ip为：" + str(proxy))
             print("User-agent：" + USER_AGENT)
         while retry_count > 0:
             try:
                 resp = requests.get(url, headers=headers, proxies={"http": "http://{}".format(proxy)})
-                resp.encoding = 'utf-8'
-                html = resp.text
+                if encoding == 0:
+                    resp.encoding = 'utf-8'
+                    html = resp.text
+                else:
+                    html = resp.content
                 return html
             except Exception:
                 retry_count -= 1
@@ -54,12 +59,19 @@ class Spider:
 
     def parse_3d(self, text):
         soup = BeautifulSoup(text, 'html.parser')
-        link_3d_soup = soup.find('div', id='qj_pic_wrap').div.iframe
-        link_3d = link_3d_soup["src"]
-        if link_3d_soup is not None:
-            return link_3d
-        else:
-            self.spider_error()
+        try:
+            link_3d_div = soup.find('div', id='qj_pic_wrap')
+            if link_3d_div is not None:
+                link_3d_element = link_3d_div.div.iframe
+                link_3d = link_3d_element["src"]
+                return link_3d
+            else:
+                print("该房间没有3D场景")
+                self.spider_error()
+                return ""
+        except Exception as e:
+            print("parse_3d_error：", e)
+            sys.exit()
 
     def parse(self, content):
         soup = BeautifulSoup(content, 'html.parser')
@@ -75,16 +87,20 @@ class Spider:
                 dt = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
                 # 爬取场景链接
-                link_href_text = self.get_html(link_href, 1)
+                link_href_text = self.get_html(link_href)
                 link_3d = self.parse_3d(link_href_text)
 
-                # 爬取场景图片
-                link_img_text = self.get_html(link_3d, 1)
-                link_imgs = self.parse_img(link_img_text)
-
-                sql = 'INSERT IGNORE INTO anjuke_3d_test (name, web_site, 3d_link, create_time, img_link1, img_link2, img_link3, img_link4, img_link5, img_link6)' \
-                      'VALUES("%s","%s","%s","%s","%s","%s","%s","%s","%s","%s")' % \
-                      (str(link_title), str(link_href), str(link_3d), dt, str(link_imgs[0]), str(link_imgs[1]), str(link_imgs[2]), str(link_imgs[3]), str(link_imgs[4]), str(link_imgs[5]))
+                # 在3D看房列表中有些房间没有3D场景
+                if link_3d == "":
+                    sql = 'INSERT IGNORE INTO anjuke_3d_test (name, web_site, 3d_link, create_time, shoot_count)' \
+                          'VALUES("%s","%s","%s","%s","%d")' % (str(link_title), str(link_href), str(link_3d), dt, 0)
+                else:
+                    # 爬取场景图片
+                    link_img_text = self.get_html(link_3d, spider_num=1)
+                    shoot_count = self.parse_img(link_img_text, link_title)
+                    sql = 'INSERT IGNORE INTO anjuke_3d_test (name, web_site, 3d_link, create_time, shoot_count)' \
+                          'VALUES("%s","%s","%s","%s","%d")' % \
+                          (str(link_title), str(link_href), str(link_3d), dt, int(shoot_count))
                 self.db.operate_data(sql)
                 self.db.commit_data()
 
@@ -94,7 +110,7 @@ class Spider:
                 self.spider_count += 1
                 time.sleep(random.random() * 6)
                 next_url = next_page['href']
-                next_url_text = self.get_html(next_url)
+                next_url_text = self.get_html(next_url, 1)
                 self.parse(next_url_text)
             else:
                 if self.spider_count == 50:
@@ -105,34 +121,60 @@ class Spider:
         else:
             self.spider_error()
 
-    def parse_img(self, text):
-        time.sleep(random.random() * 3)
+    def parse_img(self, text, scene_name):
+        # time.sleep(random.random() * 3)
         data_3d_list = re.findall(r'VRHOUSE_DATA_3D = (.+?)    </script>', text)
         if not data_3d_list:
-            data_3d_list = re.findall(r'\(\'vrdataload\',(.+?)\)', text)
+            data_3d_list = re.findall(r'\(\'vrdataload\',(.+?)\);', text)
         if data_3d_list is not []:
+            scene_name = self.validate_title(scene_name)
+            if not os.path.exists("%s" % scene_name):
+                print('创建文件夹:%s' % scene_name)
+                os.mkdir("%s" % scene_name)
 
             print("开始解析图片%d..." % self.img_count)
             self.img_count += 1
 
             try:
-                data_3d = data_3d_list[0]
+                data_3d = data_3d_list[0].replace("\\", "")
                 data = json.loads(data_3d, strict=False)
                 hotspots = data['HotSpots']
-                hotspot = hotspots[0]
-                img_links = hotspot['TileImagesPath']
+
+                for hotspots_index, hotspot in enumerate(hotspots):
+                    img_links = hotspot['TileImagesPath']
+
+                    if not os.path.exists("./%s/hotspot_%s" % (scene_name, hotspots_index)):
+                        print('创建文件夹:hotspot_%s' % hotspots_index)
+                        os.mkdir("./%s/hotspot_%s" % (scene_name, hotspots_index))
+
+                    for img_links_index, img_link in enumerate(img_links):
+                        img_link_name = img_link[24:56]
+                        print("图片名称:%s_%d.jpg" % (img_link_name, img_links_index))
+                        html = self.get_html(img_link, encoding=1)
+                        with open("./%s/hotspot_%s/%s_%d.jpg" % (scene_name, hotspots_index, img_link_name, img_links_index),
+                                  'wb') as file:
+                            file.write(html)
+
                 print("解析图片完成！")
-                return img_links
+                shoot_count = len(hotspots)
+                return shoot_count
             except Exception as e:
-                print(e)
+                self.db.close()
+                print("parse_img_error：", e)
 
         else:
             self.spider_error()
 
     def spider_error(self):
+        self.db.close()
         print("防爬机制已阻拦，需要人工操作")
         driver = webdriver.Chrome()
         driver.get("https://beijing.anjuke.com/sale/v3/")
         driver.maximize_window()
         time.sleep(8)
         return self.spider_count
+
+    def validate_title(self, title):
+        rstr = r"[\/\\\:\*\?\"\<\>\|]"  # '/ \ : * ? " < > |'
+        new_title = re.sub(rstr, "_", title)  # 替换为下划线
+        return new_title
