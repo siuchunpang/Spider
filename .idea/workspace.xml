@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="910e4dda-3077-4138-a545-ee0a3d53af38" name="Default Changelist" comment="尝试使用ip线程池">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnjukeSpider/Spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/AnjukeSpider/Spider.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnjukeSpider/links.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnjukeSpider/requests_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/AnjukeSpider/requests_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnjukeSpider/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/AnjukeSpider/test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,7 +20,7 @@
     <SUITE FILE_PATH="coverage/Spider$AnjukeSpider_requests_v2.coverage" NAME="AnjukeSpider_requests_v2 Coverage Results" MODIFIED="1580701667161" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spider_main" />
     <SUITE FILE_PATH="coverage/Spider$requests_test.coverage" NAME="requests_test Coverage Results" MODIFIED="1581146772715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AnjukeSpider" />
     <SUITE FILE_PATH="coverage/Spider$Spider.coverage" NAME="Spider Coverage Results" MODIFIED="1580975120610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AnjukeSpider" />
-    <SUITE FILE_PATH="coverage/Spider$test.coverage" NAME="test Coverage Results" MODIFIED="1581142460707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AnjukeSpider" />
+    <SUITE FILE_PATH="coverage/Spider$test.coverage" NAME="test Coverage Results" MODIFIED="1581234892434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AnjukeSpider" />
     <SUITE FILE_PATH="coverage/Spider$main.coverage" NAME="main Coverage Results" MODIFIED="1581152163575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AnjukeSpider" />
     <SUITE FILE_PATH="coverage/Spider$proxyPool.coverage" NAME="proxyPool Coverage Results" MODIFIED="1579942790888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/proxy_pool-master/cli" />
     <SUITE FILE_PATH="coverage/crawler$test.coverage" NAME="test Coverage Results" MODIFIED="1578580672847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -33,11 +31,11 @@
     <session id="-324302065">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.open.time.5" value="4" />
+          <entry key="project.open.time.5" value="5" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -46,15 +44,15 @@
           <entry key="config" value="18" />
           <entry key="dummy" value="38" />
           <entry key="md" value="280" />
-          <entry key="py" value="4712" />
-          <entry key="txt" value="17" />
+          <entry key="py" value="4797" />
+          <entry key="txt" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="280" />
-          <entry key="PLAIN_TEXT" value="73" />
-          <entry key="Python" value="4790" />
+          <entry key="PLAIN_TEXT" value="76" />
+          <entry key="Python" value="4875" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -66,9 +64,9 @@
           <entry key="json" value="19" />
           <entry key="log" value="2" />
           <entry key="md" value="13" />
-          <entry key="py" value="48" />
+          <entry key="py" value="49" />
           <entry key="sh" value="3" />
-          <entry key="txt" value="3" />
+          <entry key="txt" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -76,19 +74,19 @@
           <entry key="Dockerfile" value="1" />
           <entry key="JSON" value="22" />
           <entry key="Markdown" value="13" />
-          <entry key="PLAIN_TEXT" value="12" />
-          <entry key="Python" value="48" />
+          <entry key="PLAIN_TEXT" value="14" />
+          <entry key="Python" value="49" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AnjukeSpider/Spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
-              <caret line="134" column="49" selection-start-line="134" selection-start-column="49" selection-end-line="134" selection-end-column="49" />
+            <state relative-caret-position="266">
+              <caret line="86" column="74" lean-forward="true" selection-start-line="86" selection-start-column="16" selection-end-line="86" selection-end-column="74" />
               <folding>
                 <element signature="e#24#53#0" expanded="true" />
                 <marker date="1581152100245" expanded="true" signature="266:407" ph="..." />
@@ -123,10 +121,22 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AnjukeSpider/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <element signature="e#0#27#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AnjukeSpider/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
+            <state relative-caret-position="95">
               <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
               <folding>
                 <element signature="e#24#49#0" expanded="true" />
@@ -170,6 +180,7 @@
       <find>&quot;HotSpots&quot;</find>
       <find>'</find>
       <find>parse_img_error</find>
+      <find>该房间没有3D场景</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
@@ -203,9 +214,10 @@
         <option value="$PROJECT_DIR$/AnjukeSpider/DBUtils.py" />
         <option value="$PROJECT_DIR$/AnjukeSpider/main.py" />
         <option value="$PROJECT_DIR$/AnjukeSpider/test.json" />
-        <option value="$PROJECT_DIR$/AnjukeSpider/test.py" />
         <option value="$PROJECT_DIR$/AnjukeSpider/requests_test.py" />
         <option value="$PROJECT_DIR$/AnjukeSpider/Spider.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/AnjukeSpider/test.py" />
       </list>
     </option>
   </component>
@@ -272,12 +284,12 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\AutoTest\Spider" />
       <recent name="F:\AutoTest\Spider\Spider_main" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\AutoTest\Spider\Spider_main" />
-      <recent name="F:\AutoTest\Spider" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -292,7 +304,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.test">
     <configuration name="AnjukeSpider_requests" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="crawler" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -412,9 +424,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.requests_test" />
-        <item itemvalue="Python.test" />
         <item itemvalue="Python.Spider" />
         <item itemvalue="Python.AnjukeSpider_requests" />
       </list>
@@ -465,12 +477,12 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18550107" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18763326" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32760474" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.32760474" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.32760474" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39849624" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -598,13 +610,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AnjukeSpider/spider.log" />
-    <entry file="file://$PROJECT_DIR$/AnjukeSpider/test.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="25" column="14" lean-forward="true" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/AnjukeSpider/test.json" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -615,19 +621,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AnjukeSpider/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/AnjukeSpider/links.json" />
     <entry file="file://$PROJECT_DIR$/AnjukeSpider/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
+        <state relative-caret-position="95">
           <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
           <folding>
             <element signature="e#24#49#0" expanded="true" />
@@ -635,10 +632,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AnjukeSpider/links.json">
+    <entry file="file://$PROJECT_DIR$/proxy_pool-master/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="197" column="5" selection-start-line="197" selection-start-column="5" selection-end-line="197" selection-end-column="5" />
+        <state relative-caret-position="228">
+          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -664,13 +664,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AnjukeSpider/Spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="134" column="49" selection-start-line="134" selection-start-column="49" selection-end-line="134" selection-end-column="49" />
+        <state relative-caret-position="266">
+          <caret line="86" column="74" lean-forward="true" selection-start-line="86" selection-start-column="16" selection-end-line="86" selection-end-column="74" />
           <folding>
             <element signature="e#24#53#0" expanded="true" />
             <marker date="1581152100245" expanded="true" signature="266:407" ph="..." />
             <marker date="1581152100245" expanded="true" signature="1783:2295" ph="..." />
             <marker date="1581152100245" expanded="true" signature="6234:6235" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AnjukeSpider/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
           </folding>
         </state>
       </provider>
