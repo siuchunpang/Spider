@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import sys
 import pymysql
 import configparser
 import datetime
@@ -21,21 +22,15 @@ charset = cf.get('db', 'charset')
 
 class DBUtils:
     def __init__(self):
-        self.host = host
-        self.user = user
-        self.pwd = pwd
-        self.db = db
-        self.port = port
-        self.get_conn()
-
-    # 获取数据库连接
-    def get_conn(self):
-        try:
-            self.conn = pymysql.connect(host=host, port=port, user=user, passwd=pwd, db=db, charset=charset)
-        except pymysql.Error as e:
-            print('Mysql Error %d: %s' % (e.args[0], e.args[1]))
-        finally:
-            self.cursor = self.conn.cursor()
+        self.conn = pymysql.connect(
+            host=host,
+            port=port,
+            user=user,
+            passwd=pwd,
+            db=db,
+            charset=charset
+        )
+        self.cursor = self.conn.cursor()
 
     # 选择数据
     def get_data_from_db(self, sql):
@@ -43,6 +38,7 @@ class DBUtils:
             self.cursor.execute(sql)
         except pymysql.Error as e:
             print('Mysql Error %d: %s' % (e.args[0], e.args[1]))
+            sys.exit()
         finally:
             return self.cursor.fetchall()
 
@@ -52,6 +48,7 @@ class DBUtils:
             self.conn.commit()
         except pymysql.Error as e:
             print('Mysql Error %d: %s' % (e.args[0], e.args[1]))
+            sys.exit()
 
     # 回滚数据
     def rollback_data(self):
@@ -59,6 +56,7 @@ class DBUtils:
             self.conn.rollback()
         except pymysql.Error as e:
             print('Mysql Error %d: %s' % (e.args[0], e.args[1]))
+            sys.exit()
 
     # 操作数据
     def operate_data(self, sql):
@@ -76,6 +74,7 @@ class DBUtils:
             self.conn.close()
         except pymysql.Error as e:
             print('Mysql Error %d: %s' % (e.args[0], e.args[1]))
+            sys.exit()
 
 
 if __name__ == '__main__':

@@ -2,6 +2,10 @@
 使用ip代理池：proxy_pool-master
 =======
 
+# 安装requirement.txt的包
+* proxy_pool-master目录
+* AnjukeSpider目录
+
 ### 启动:
 
 ```

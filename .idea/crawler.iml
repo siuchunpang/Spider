@@ -8,6 +8,8 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="proxy_pool-master" />
+    <orderEntry type="module" module-name="Scrapy_anjuke" />
+    <orderEntry type="module" module-name="Scrapy_test" />
   </component>
   <component name="TestRunnerService">
     <option name="PROJECT_TEST_RUNNER" value="Unittests" />

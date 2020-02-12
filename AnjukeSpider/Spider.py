@@ -39,7 +39,7 @@ class Spider:
         retry_count = 5  # 容错次数
         proxy = self.get_proxy().get("proxy")  # 获取代理ip
         if spider_num == 1:
-            print("开始第%d次爬虫" % self.spider_count)
+            print("第%d次爬虫" % self.spider_count)
             print("代理ip为：" + str(proxy))
             print("User-agent：" + USER_AGENT)
         while retry_count > 0:
@@ -83,6 +83,7 @@ class Spider:
 
             for link in link_list:
                 link_title = link['title']
+                link_title = self.validate_title(link_title)
                 link_href = link['href']
                 dt = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
@@ -92,13 +93,13 @@ class Spider:
 
                 # 在3D看房列表中有些房间没有3D场景
                 if link_3d == "":
-                    sql = 'INSERT IGNORE INTO anjuke_3d_test (name, web_site, 3d_link, create_time, shoot_count)' \
+                    sql = 'INSERT IGNORE INTO anjuke (name, web_site, 3d_link, create_time, shoot_count)' \
                           'VALUES("%s","%s","%s","%s","%d")' % (str(link_title), str(link_href), str(link_3d), dt, 0)
                 else:
                     # 爬取场景图片
                     link_img_text = self.get_html(link_3d, spider_num=1)
                     shoot_count = self.parse_img(link_img_text, link_title)
-                    sql = 'INSERT IGNORE INTO anjuke_3d_test (name, web_site, 3d_link, create_time, shoot_count)' \
+                    sql = 'INSERT IGNORE INTO anjuke (name, web_site, 3d_link, create_time, shoot_count)' \
                           'VALUES("%s","%s","%s","%s","%d")' % \
                           (str(link_title), str(link_href), str(link_3d), dt, int(shoot_count))
                 self.db.operate_data(sql)
@@ -127,7 +128,6 @@ class Spider:
         if not data_3d_list:
             data_3d_list = re.findall(r'\(\'vrdataload\',(.+?)\);', text)
         if data_3d_list is not []:
-            scene_name = self.validate_title(scene_name)
             if not os.path.exists("%s" % scene_name):
                 print('创建文件夹:%s' % scene_name)
                 os.mkdir("%s" % scene_name)
@@ -144,12 +144,12 @@ class Spider:
                     img_links = hotspot['TileImagesPath']
 
                     if not os.path.exists("./%s/hotspot_%s" % (scene_name, hotspots_index)):
-                        print('创建文件夹:hotspot_%s' % hotspots_index)
+                        # print('创建文件夹:hotspot_%s' % hotspots_index)
                         os.mkdir("./%s/hotspot_%s" % (scene_name, hotspots_index))
 
                     for img_links_index, img_link in enumerate(img_links):
                         img_link_name = img_link[24:56]
-                        print("图片名称:%s_%d.jpg" % (img_link_name, img_links_index))
+                        # print("图片名称:%s_%d.jpg" % (img_link_name, img_links_index))
                         html = self.get_html(img_link, encoding=1)
                         with open("./%s/hotspot_%s/%s_%d.jpg" % (scene_name, hotspots_index, img_link_name, img_links_index),
                                   'wb') as file:
