@@ -102,6 +102,7 @@ class Spider:
             print("解析网站完成！")
             next_page = soup.find('a', class_='aNxt')
             if next_page is not None:
+                self.img_count = 1
                 self.spider_count += 1
                 time.sleep(random.random() * 6)
                 next_url = next_page['href']
@@ -168,7 +169,7 @@ class Spider:
 
     def parse_img(self, text, scene_name):
         # time.sleep(random.random() * 3)
-        scene_path = "F:\\AutoTest\\Spider\\AnjukeSpider\\"
+        scene_path = "F:\\Project\\Spider\\AnjukeSpider\\"
         data_3d_list = re.findall(r'VRHOUSE_DATA_3D = (.+?)    </script>', text)
         if not data_3d_list:
             data_3d_list = re.findall(r'\(\'vrdataload\',(.+?)\);', text)
@@ -183,6 +184,8 @@ class Spider:
             try:
                 data_3d = data_3d_list[0].replace("\\", "")
                 data = json.loads(data_3d, strict=False)
+                with open(scene_path + "scene\\%s\\scene.json" % scene_name, 'w') as file:
+                    json.dump(data, file)
                 hotspots = data['HotSpots']
 
                 for hotspots_index, hotspot in enumerate(hotspots):
@@ -211,11 +214,11 @@ class Spider:
             self.spider_error()
 
     def spider_error(self):
-        self.db.close()
         print("防爬机制已阻拦，需要人工操作")
         driver = webdriver.Chrome()
         driver.get("https://beijing.anjuke.com/sale/v3/")
         driver.maximize_window()
+        self.db.close()
         time.sleep(8)
         return self.spider_count
 
