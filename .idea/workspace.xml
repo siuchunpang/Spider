@@ -2,74 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="910e4dda-3077-4138-a545-ee0a3d53af38" name="Default Changelist" comment="尝试使用ip线程池">
-      <change afterPath="$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/run.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/scene.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/test.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scrapy_anjuke/proxy_pool-master/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scrapy_anjuke/proxy_pool-master/.travis.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scrapy_anjuke/proxy_pool-master/Api/ProxyApi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scrapy_anjuke/proxy_pool-master/Api/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scrapy_anjuke/proxy_pool-master/Config/ConfigGetter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scrapy_anjuke/proxy_pool-master/Config/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scrapy_anjuke/proxy_pool-master/Config/setting.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scrapy_anjuke/proxy_pool-master/DB/DbClient.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scrapy_anjuke/proxy_pool-master/DB/MongodbClient.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scrapy_anjuke/proxy_pool-master/DB/RedisClient.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scrapy_anjuke/proxy_pool-master/DB/SsdbClient.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scrapy_anjuke/proxy_pool-master/DB/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scrapy_anjuke/proxy_pool-master/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scrapy_anjuke/proxy_pool-master/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scrapy_anjuke/proxy_pool-master/Manager/ProxyManager.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scrapy_anjuke/proxy_pool-master/Manager/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scrapy_anjuke/proxy_pool-master/ProxyGetter/CheckProxy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scrapy_anjuke/proxy_pool-master/ProxyGetter/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scrapy_anjuke/proxy_pool-master/ProxyGetter/getFreeProxy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scrapy_anjuke/proxy_pool-master/ProxyHelper/Proxy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scrapy_anjuke/proxy_pool-master/ProxyHelper/ProxyUtil.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scrapy_anjuke/proxy_pool-master/ProxyHelper/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scrapy_anjuke/proxy_pool-master/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scrapy_anjuke/proxy_pool-master/Schedule/ProxyScheduler.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scrapy_anjuke/proxy_pool-master/Schedule/RawProxyCheck.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scrapy_anjuke/proxy_pool-master/Schedule/UsefulProxyCheck.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scrapy_anjuke/proxy_pool-master/Schedule/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scrapy_anjuke/proxy_pool-master/Test/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scrapy_anjuke/proxy_pool-master/Test/testConfig.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scrapy_anjuke/proxy_pool-master/Test/testGetFreeProxy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scrapy_anjuke/proxy_pool-master/Test/testLogHandler.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scrapy_anjuke/proxy_pool-master/Test/testProxyClass.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scrapy_anjuke/proxy_pool-master/Test/testWebRequest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scrapy_anjuke/proxy_pool-master/Util/LogHandler.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scrapy_anjuke/proxy_pool-master/Util/WebRequest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scrapy_anjuke/proxy_pool-master/Util/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scrapy_anjuke/proxy_pool-master/Util/utilClass.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scrapy_anjuke/proxy_pool-master/Util/utilFunction.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scrapy_anjuke/proxy_pool-master/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scrapy_anjuke/proxy_pool-master/_config.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scrapy_anjuke/proxy_pool-master/cli/proxyPool.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scrapy_anjuke/proxy_pool-master/cli/start.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scrapy_anjuke/proxy_pool-master/doc/block_ips.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scrapy_anjuke/proxy_pool-master/doc/introduce.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scrapy_anjuke/proxy_pool-master/doc/release_notes.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scrapy_anjuke/proxy_pool-master/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scrapy_anjuke/proxy_pool-master/log/log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scrapy_anjuke/proxy_pool-master/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scrapy_anjuke/proxy_pool-master/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/middlewares.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/middlewares.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/model/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/model/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/pipelines.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/spiders/web_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/spiders/web_spider.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/crawler.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/crawler.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnjukeSpider/DBUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/AnjukeSpider/DBUtils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AnjukeSpider/Spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/AnjukeSpider/Spider.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnjukeSpider/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/AnjukeSpider/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proxy_pool-master/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/proxy_pool-master/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnjukeSpider/requests_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/AnjukeSpider/requests_test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,28 +13,63 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Spider$run.coverage" NAME="run Coverage Results" MODIFIED="1581505746244" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Scrapy_anjuke/anjukespider" />
-    <SUITE FILE_PATH="coverage/Spider$AnjukeSpider_requests__1_.coverage" NAME="AnjukeSpider_requests (1) Coverage Results" MODIFIED="1579944467867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spider_main" />
-    <SUITE FILE_PATH="coverage/crawler$AnjukeSpider.coverage" NAME="AnjukeSpider Coverage Results" MODIFIED="1577976239716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Spider$AnjukeSpider_requests.coverage" NAME="AnjukeSpider_requests Coverage Results" MODIFIED="1580708805138" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spider_main" />
-    <SUITE FILE_PATH="coverage/Spider$DBUtils.coverage" NAME="DBUtils Coverage Results" MODIFIED="1580698930704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spider_main" />
-    <SUITE FILE_PATH="coverage/crawler$test.coverage" NAME="test Coverage Results" MODIFIED="1578580672847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Spider$requests_test.coverage" NAME="requests_test Coverage Results" MODIFIED="1581146772715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AnjukeSpider" />
-    <SUITE FILE_PATH="coverage/Spider$Spider.coverage" NAME="Spider Coverage Results" MODIFIED="1580975120610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AnjukeSpider" />
-    <SUITE FILE_PATH="coverage/Spider$main.coverage" NAME="main Coverage Results" MODIFIED="1581257786941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AnjukeSpider" />
-    <SUITE FILE_PATH="coverage/Spider$AnjukeSpider_requests_v2.coverage" NAME="AnjukeSpider_requests_v2 Coverage Results" MODIFIED="1580701667161" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spider_main" />
-    <SUITE FILE_PATH="coverage/Spider$proxyPool.coverage" NAME="proxyPool Coverage Results" MODIFIED="1579942790888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/proxy_pool-master/cli" />
-    <SUITE FILE_PATH="coverage/crawler$AnjukeSpider_requests.coverage" NAME="AnjukeSpider_requests Coverage Results" MODIFIED="1578585198261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Spider$test.coverage" NAME="test Coverage Results" MODIFIED="1581494265800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AnjukeSpider" />
+    <SUITE FILE_PATH="coverage/crawler$AnjukeSpider.coverage" NAME="AnjukeSpider Coverage Results" MODIFIED="1577976239716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Spider$AnjukeSpider_requests_test.coverage" NAME="AnjukeSpider_requests_test Coverage Results" MODIFIED="1580702476133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spider_main" />
+    <SUITE FILE_PATH="coverage/crawler$AnjukeSpider_requests.coverage" NAME="AnjukeSpider_requests Coverage Results" MODIFIED="1578585198261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Spider$run.coverage" NAME="run Coverage Results" MODIFIED="1581505746244" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Scrapy_anjuke/anjukespider" />
+    <SUITE FILE_PATH="coverage/Spider$AnjukeSpider_requests_v2.coverage" NAME="AnjukeSpider_requests_v2 Coverage Results" MODIFIED="1580701667161" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spider_main" />
+    <SUITE FILE_PATH="coverage/Spider$requests_test.coverage" NAME="requests_test Coverage Results" MODIFIED="1581912178342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AnjukeSpider" />
+    <SUITE FILE_PATH="coverage/Spider$Spider.coverage" NAME="Spider Coverage Results" MODIFIED="1580975120610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AnjukeSpider" />
+    <SUITE FILE_PATH="coverage/Spider$test.coverage" NAME="test Coverage Results" MODIFIED="1581494265800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AnjukeSpider" />
+    <SUITE FILE_PATH="coverage/Spider$main.coverage" NAME="main Coverage Results" MODIFIED="1581909312170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AnjukeSpider" />
+    <SUITE FILE_PATH="coverage/Spider$proxyPool.coverage" NAME="proxyPool Coverage Results" MODIFIED="1579942790888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/proxy_pool-master/cli" />
+    <SUITE FILE_PATH="coverage/crawler$test.coverage" NAME="test Coverage Results" MODIFIED="1578580672847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Spider$DBUtils.coverage" NAME="DBUtils Coverage Results" MODIFIED="1580698930704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spider_main" />
+    <SUITE FILE_PATH="coverage/Spider$AnjukeSpider_requests__1_.coverage" NAME="AnjukeSpider_requests (1) Coverage Results" MODIFIED="1579944467867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spider_main" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-324302065">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="json" value="1" />
+          <entry key="md" value="1" />
+          <entry key="py" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JSON" value="1" />
+          <entry key="Markdown" value="1" />
+          <entry key="Python" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="133" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="133" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AnjukeSpider/Spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="166" selection-start-line="166" selection-end-line="166" />
+            <state relative-caret-position="-665">
+              <caret line="49" column="36" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
               <folding>
                 <element signature="e#24#53#0" expanded="true" />
               </folding>
@@ -108,85 +78,25 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/spiders/web_spider.py">
+        <entry file="file://$PROJECT_DIR$/AnjukeSpider/requests_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="28" column="47" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
+            <state relative-caret-position="449">
+              <caret line="64" column="36" selection-start-line="64" selection-start-column="36" selection-end-line="64" selection-end-column="36" />
               <folding>
-                <element signature="e#0#11#0" expanded="true" />
+                <element signature="e#24#53#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/items.py">
+        <entry file="file://$PROJECT_DIR$/AnjukeSpider/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/pipelines.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+            <state relative-caret-position="190">
+              <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
               <folding>
-                <element signature="e#0#42#0" expanded="true" />
+                <element signature="e#24#49#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/middlewares.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="110" column="47" selection-start-line="110" selection-start-column="47" selection-end-line="110" selection-end-column="47" />
-              <folding>
-                <element signature="e#170#196#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/model/config.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="36" selection-start-column="36" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/model/scene.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-              <folding>
-                <element signature="e#0#56#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/run.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -222,7 +132,6 @@
       <find>1b93d3e8b56d53e98e4592b156c2d84d/1024x1024.jpg&quot;</find>
       <find>&quot;HotSpots&quot;</find>
       <find>'</find>
-      <find>parse_img_error</find>
       <find>该房间没有3D场景</find>
       <find>shell</find>
       <find>DOWNLOADER_MIDDLEWARES</find>
@@ -232,13 +141,14 @@
       <find>IPProxyDownloaderMiddleware</find>
       <find>中海枫涟山庄，板楼3室，明厨明卫，精致装修，不临街，接受换房</find>
       <find>Duplicate</find>
+      <find>parse_img_error</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../Scrapy_anjuke" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -263,7 +173,6 @@
         <option value="$PROJECT_DIR$/Spider_main/AnjukeSpider_requests.py" />
         <option value="$PROJECT_DIR$/AnjukeSpider/main.py" />
         <option value="$PROJECT_DIR$/AnjukeSpider/test.json" />
-        <option value="$PROJECT_DIR$/AnjukeSpider/requests_test.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/proxy_pool-master/requirements.txt" />
         <option value="$PROJECT_DIR$/requirements.txt" />
@@ -286,15 +195,23 @@
         <option value="$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/middlewares.py" />
         <option value="$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/redis/redisopera.py" />
         <option value="$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/items.py" />
-        <option value="$PROJECT_DIR$/AnjukeSpider/Spider.py" />
         <option value="$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/model/scene.py" />
         <option value="$PROJECT_DIR$/AnjukeSpider/test.py" />
         <option value="$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/spiders/web_spider.py" />
         <option value="$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/settings.py" />
         <option value="$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/model/config.py" />
         <option value="$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/pipelines.py" />
+        <option value="$PROJECT_DIR$/AnjukeSpider/Spider.py" />
+        <option value="$PROJECT_DIR$/AnjukeSpider/requests_test.py" />
+        <option value="$PROJECT_DIR$/AnjukeSpider/scene.json" />
       </list>
     </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="109" />
@@ -337,12 +254,8 @@
             </path>
             <path>
               <item name="Spider" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scrapy_anjuke" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Spider" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scrapy_anjuke" type="462c0819:PsiDirectoryNode" />
-              <item name="anjukespider" type="462c0819:PsiDirectoryNode" />
+              <item name="Spider" type="462c0819:PsiDirectoryNode" />
+              <item name="AnjukeSpider" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -381,7 +294,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.run">
+  <component name="RunManager" selected="Python.requests_test">
     <configuration name="Spider" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="crawler" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -501,10 +414,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.requests_test" />
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.run" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.main" />
-        <item itemvalue="Python.requests_test" />
         <item itemvalue="Python.Spider" />
       </list>
     </recent_temporary>
@@ -562,15 +475,14 @@
     <option name="totallyTimeSpent" value="95436000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20895523" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21108742" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32760474" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49840087" visible="true" weight="0.3275488" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49840087" weight="0.3265306" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39849624" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -579,7 +491,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32975295" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50159913" side_tool="true" weight="0.3275488" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4989339" weight="0.318872" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4989339" weight="0.3179377" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32975295" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -591,18 +503,25 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="尝试使用ip线程池" />
     <option name="LAST_COMMIT_MESSAGE" value="尝试使用ip线程池" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/AnjukeSpider/Spider.py</url>
+          <line>207</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/proxy_pool-master/Config/setting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="50" column="1" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AnjukeSpider/links20200130.json" />
     <entry file="file://D:/Program Files (x86)/Python3.7/Lib/site-packages/pymysql/cursors.py" />
     <entry file="file://D:/Program Files (x86)/Python3.7/Lib/site-packages/pymysql/connections.py" />
@@ -631,27 +550,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AnjukeSpider/requests_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="71" column="18" selection-start-line="71" selection-start-column="18" selection-end-line="71" selection-end-column="18" />
-          <folding>
-            <element signature="e#24#53#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/anjukespider/middlewares.py" />
-    <entry file="file://$PROJECT_DIR$/AnjukeSpider/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-          <folding>
-            <element signature="e#24#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/scrapy.cfg" />
     <entry file="file://$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/anjukespider/__init__.py" />
     <entry file="file://$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/test.csv" />
@@ -663,30 +562,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/requirements.txt" />
-    <entry file="file://E:/Program Files (x86)/python/Lib/site-packages/bs4/element.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://E:/Program Files (x86)/python/Lib/site-packages/bs4/element.py" />
     <entry file="file://$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/anjukespider/spiders/web_spider.py" />
     <entry file="file://$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/anjukespider/DBPipelines.py" />
     <entry file="file://$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/anjukespider/items.py" />
     <entry file="file://$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/anjukespider/settings.py" />
-    <entry file="file://$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/spiders/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://E:/Program Files (x86)/python/Lib/site-packages/scrapy/item.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="90" selection-start-line="90" selection-end-line="90" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/spiders/__init__.py" />
+    <entry file="file://E:/Program Files (x86)/python/Lib/site-packages/scrapy/item.py" />
     <entry file="file://$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/model/article.py" />
     <entry file="file://$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/test.txt" />
     <entry file="file://$PROJECT_DIR$/AnjukeSpider/db.config">
@@ -698,73 +581,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../Scrapy_test/webtest/webtest/settings.py" />
     <entry file="file://$PROJECT_DIR$/../Scrapy_test/webtest/webtest/spiders/web_spider.py" />
-    <entry file="file://$PROJECT_DIR$/../webtest/webtest/pipelines.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../webtest/webtest/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../webtest/webtest/spiders/web_spider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../webtest/webtest/items.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Scrapy_anjuke/proxy_pool-master/DB/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/scene.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="336">
-            <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/redis/redisopera.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AnjukeSpider/DBUtils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
-          <folding>
-            <element signature="e#24#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../webtest/webtest/pipelines.py" />
+    <entry file="file://$PROJECT_DIR$/../webtest/webtest/settings.py" />
+    <entry file="file://$PROJECT_DIR$/../webtest/webtest/spiders/web_spider.py" />
+    <entry file="file://$PROJECT_DIR$/../webtest/webtest/items.py" />
+    <entry file="file://$PROJECT_DIR$/../Scrapy_anjuke/proxy_pool-master/DB/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/scene.json" />
+    <entry file="file://$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/redis/redisopera.py" />
     <entry file="file://$PROJECT_DIR$/AnjukeSpider/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -772,87 +595,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/run.py">
+    <entry file="file://$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/run.py" />
+    <entry file="file://$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/test.log" />
+    <entry file="file://$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/model/scene.py" />
+    <entry file="file://$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/items.py" />
+    <entry file="file://$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/spiders/web_spider.py" />
+    <entry file="file://$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/pipelines.py" />
+    <entry file="file://$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/model/config.py" />
+    <entry file="file://$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/settings.py" />
+    <entry file="file://$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/middlewares.py" />
+    <entry file="file://$PROJECT_DIR$/AnjukeSpider/DBUtils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state>
+          <caret column="23" lean-forward="true" selection-start-column="23" selection-end-column="23" />
+          <folding>
+            <element signature="e#24#34#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/test.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="74" column="32" lean-forward="true" selection-start-line="74" selection-start-column="32" selection-end-line="74" selection-end-column="32" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="323">
+            <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AnjukeSpider/Spider.py">
+    <entry file="file://$PROJECT_DIR$/AnjukeSpider/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="166" selection-start-line="166" selection-end-line="166" />
+        <state relative-caret-position="190">
+          <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
+          <folding>
+            <element signature="e#24#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AnjukeSpider/scene.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="13" lean-forward="true" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AnjukeSpider/requests_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="64" column="36" selection-start-line="64" selection-start-column="36" selection-end-line="64" selection-end-column="36" />
           <folding>
             <element signature="e#24#53#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/model/scene.py">
+    <entry file="file://$PROJECT_DIR$/AnjukeSpider/Spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="-665">
+          <caret line="49" column="36" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
           <folding>
-            <element signature="e#0#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/items.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/spiders/web_spider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="28" column="47" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/pipelines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/model/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="36" selection-start-column="36" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Scrapy_anjuke/anjukespider/middlewares.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="110" column="47" selection-start-line="110" selection-start-column="47" selection-end-line="110" selection-end-column="47" />
-          <folding>
-            <element signature="e#170#196#0" expanded="true" />
+            <element signature="e#24#53#0" expanded="true" />
           </folding>
         </state>
       </provider>
